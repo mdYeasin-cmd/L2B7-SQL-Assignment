@@ -5,3 +5,9 @@ SELECT match_id, fixture, base_ticket_price
 FROM matches
 WHERE tournament_category = 'Champions League'
   AND match_status = 'Available';
+
+-- Query 2
+SELECT user_id, full_name, email
+FROM users
+WHERE full_name LIKE 'Tanvir%'
+   OR full_name ILIKE '%Haque%';
